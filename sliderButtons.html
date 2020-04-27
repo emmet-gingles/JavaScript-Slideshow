@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Slideshow with Buttons</title>
+        <!-- Link to CSS stylesheet -->
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Landmark Gallery</h1>
+        <p>Click the left and right buttons to change the slides</p>
+        <!-- Slides -->
+        <div class="container">
+            <div class="mySlides">
+                <div class="slideNumber">1/12</div>
+                <img src="images/great_wall_of_china.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="slideNumber">2/12</div>
+                <img src="images/taj_mahal.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="slideNumber">3/12</div>
+                <img src="images/pyramids_of_giza.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="slideNumber">4/12</div>
+                <img src="images/colosseum.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="slideNumber">5/12</div>
+                <img src="images/leaning_tower_of_pisa.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="slideNumber">6/12</div>
+                <img src="images/machu_pichu.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="slideNumber">7/12</div>
+                <img src="images/christ_the_redeemer.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="slideNumber">8/12</div>
+                <img src="images/statue_of_liberty.jpg.">
+            </div>
+            <div class="mySlides">
+                <div class="slideNumber">9/12</div>
+                <img src="images/eiffel_tower.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="slideNumber">10/12</div>
+                <img src="images/st_basils_cathedral.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="slideNumber">11/12</div>
+                <img src="images/sydney_opera_house.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="slideNumber">12/12</div>
+                <img src="images/golde_gate_bridge.jpg">
+            </div>
+            
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            <!-- Image text -->
+            <div id="captionContainer">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div>
+                <div class="column">
+                    <img class="thumbnail" src="images/great_wall_of_china.jpg" onclick="currentSlide(1)" alt="Great Wall of China">        
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="images/taj_mahal.jpg" onclick="currentSlide(2)" alt="Taj Mahal">        
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="images/pyramids_of_giza.jpg" onclick="currentSlide(3)" alt="Pyramids of Giza">        
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="images/colosseum.jpg" onclick="currentSlide(4)" alt="Colosseum">        
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="images/leaning_tower_of_pisa.jpg" onclick="currentSlide(5)" alt="Leaning Tower of Pisa">        
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="images/machu_pichu.jpg" onclick="currentSlide(6)" alt="Machu Pichu">        
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="images/christ_the_redeemer.jpg" onclick="currentSlide(7)" alt="Christ the Redeemer">        
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="images/statue_of_liberty.jpg" onclick="currentSlide(8)" alt="Statue of Liberty">        
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="images/eiffel_tower.jpg" onclick="currentSlide(9)" alt="Eiffel Tower">        
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="images/st_basils_cathedral.jpg" onclick="currentSlide(10)" alt="St. Basil's Cathedral">        
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="images/sydney_opera_house.jpg" onclick="currentSlide(11)" alt="Sydney Opera House">        
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="images/golde_gate_bridge.jpg" onclick="currentSlide(12)" alt="Golden Gate Bridge">        
+                </div>
+            </div>
+        </div>
+        <!-- Link to JavaScript file -->
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
